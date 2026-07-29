@@ -22,26 +22,44 @@
   <h1>プライバシーポリシー</h1>
   <p>アプリ名：RCCM試験対策 全肢解説問題集<br>
   開発者：KawaApp Studio<br>
-  最終更新：2026年5月22日</p>
+  最終更新：2026年7月30日</p>
 
   <h2>開発者による情報収集</h2>
   <p>本アプリは、ユーザーの個人情報・位置情報・端末識別情報・その他いかなる個人データも開発者側に収集することはありません。</p>
 
   <h2>ネットワーク通信</h2>
-  <p>本アプリは、学習進捗のiCloud同期（後述）および購入処理・購入の復元を除き、インターネット通信を行いません。広告配信・解析・トラッキング目的の通信は一切ありません。</p>
+  <p>本アプリは、学習進捗のiCloud同期、Apple純正のApp内課金（RevenueCat経由）、および下記「AI所見」をユーザーが自ら実行した場合の通信を除き、インターネット通信を行いません。広告配信・解析・トラッキング目的の通信は一切ありません。</p>
 
   <h2>端末内に保存されるデータ</h2>
-  <p>学習進捗（解答履歴・正解率・苦手問題の自動抽出・選択中の部門）は、端末の UserDefaults / SharedPreferences に保存されます。アプリを削除すると、これらのデータも削除されます。</p>
+  <p>学習進捗（解答履歴・正解率・苦手問題の自動抽出・ブックマーク・累積解答回数）は、端末の UserDefaults / SharedPreferences に保存されます。アプリを削除すると、これらのデータも削除されます。分野ごとの進捗は分野別キー（例：study_records_v2_kasen）で管理し、将来の分野追加時にも干渉しません。</p>
 
   <h2>iCloud 同期</h2>
   <p>iCloud にサインインしている iOS デバイスでは、学習進捗が iCloud Key-Value Store を通じて、ユーザー自身の iCloud アカウント内に自動保存されます。これにより同じ Apple ID の他端末との進捗共有や、機種変更時の引き継ぎが可能です。</p>
   <p>iCloud に保存されるデータはユーザー自身のアカウント管理下にあり、開発者がアクセスすることはありません。iCloud 同期を望まない場合は iOS の設定で本アプリの iCloud 利用をオフにできます。</p>
 
-  <h2>アプリ内課金</h2>
-  <p>全問題・全機能の解放は買い切りのアプリ内課金で提供します。決済・購入検証は Apple の App Store / StoreKit（iOS版）および Google Play / Google Play Billing（Android版）が行い、購入履歴の管理・購入状態の確認・購入の復元・購入の分析に RevenueCat（<a href="https://www.revenuecat.com/privacy">RevenueCat プライバシーポリシー</a>）を利用します。これらで扱われるのは、ストアが発行する匿名の識別子・購入トークン等の購入履歴情報のみで、氏名・連絡先等の個人情報を開発者が取得することはありません。購入履歴は、アプリ機能の提供および購入の分析のために収集・処理されます。</p>
+  <h2>アプリ内課金（買切¥1,500・3分野フル収録）</h2>
+  <p>累積20回までは無料体験（3分野すべて含む）、21回目以降を解答する場面で「RCCM 3分野 全782問解放」（買切¥1,500）の購入をご案内します。1回の購入で河川砂防・道路・鋼コンの3分野すべてが解放され、追加課金・月額課金は一切ありません。決済・購入検証は Apple の App Store / StoreKit（iOS版）および Google Play / Google Play Billing（Android版）が行い、購入履歴の管理・購入状態の確認・購入の復元・購入の分析に RevenueCat（<a href="https://www.revenuecat.com/privacy">RevenueCat プライバシーポリシー</a>）を利用します。これらで扱われるのは、ストアが発行する匿名の識別子・購入トークン等の購入履歴情報のみで、氏名・連絡先等の個人情報を開発者が取得することはありません。購入履歴は、アプリ機能の提供および購入の分析のために収集・処理されます。</p>
 
-  <h2>第三者サービス</h2>
-  <p>本アプリは広告、アナリティクス、トラッキング用の外部SDKを一切使用していません。</p>
+  <h2>第三者サービス（RevenueCat）</h2>
+  <p>本アプリは広告・アナリティクス・トラッキング目的の SDK を一切組み込んでいません。RevenueCat SDK は App 内課金の購入状態確認・購入の復元・エンタイトルメント管理の目的でのみ利用しています。</p>
+  <p>開発者は、ユーザーの氏名・メールアドレス・学習内容などの個人情報を収集しません。一方で、RevenueCat の仕組み上、匿名のアプリ利用者識別子（RevenueCat が自動生成する App User ID）、購入情報、レシート情報等が RevenueCat 側で処理される場合があります。これらは購入の確認・復元・不正防止のためにのみ使用され、広告配信や解析、ユーザー追跡の目的には使用されません。</p>
+  <p>App Store Connect の App プライバシーでは、購入処理に伴う情報（Purchases / Purchase History）と、AI所見をユーザーが実行した場合に送信されるユーザーコンテンツ（答案本文・テーマ名）を、いずれも「アプリの機能（App Functionality）」目的・「ユーザーに関連付けられないデータ」として申告しています。</p>
+
+  <h2>記述対策（問題Ⅲ）で入力した答案の扱い</h2>
+  <p>記述対策の機能でユーザーが入力した答案本文・テーマ名・指定用語・受験日は、端末内（UserDefaults / SharedPreferences）にのみ保存されます。<strong>下記「AI所見」をユーザーが自ら実行した場合を除き、これらが開発者や第三者に送信されることはありません。</strong>アプリを削除すると同時に削除されます。</p>
+  <p>文字数のカウント、「」で囲まれた語の抽出と個数の判定、空白や記号の連続の検出、14観点の計測は、すべて端末内で完結する処理です。<strong>これらの機械計測に生成AI・大規模言語モデル（LLM）は使用しておらず、インターネット通信も行いません。</strong></p>
+  <p>なお、本アプリは試験実施団体が公表している出題テーマ・設問文・指定用語リストを収録していません。公式サイトへのリンクを設置し、ユーザーご自身が入力した用語と照合する方式としています。</p>
+
+  <h2>AI所見（Pro・任意機能）における答案の送信</h2>
+  <p>Pro版の「AI所見」は、ユーザーが<strong>その都度表示される同意ダイアログで「同意して送信」を選択した場合にのみ</strong>動作する任意機能です。同意すると、答案本文・テーマ名・端末内計測の結果が、開発者の管理する中継サーバー（Cloudflare Workers）を経由して Anthropic 社の Claude API に送信され、所見（テーマとの一致・設問①と②の対応に関する参考コメント）の生成にのみ使用されます。</p>
+  <p>送信された答案本文は、<strong>中継サーバーには保存されず、ログにも記録されません</strong>。Anthropic 社による API 入力データの取り扱いは同社のプライバシーポリシー（<a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>）に従います（既定で学習目的に使用されません）。所見の結果はお使いの端末内にのみ保存されます。</p>
+  <p>本機能には1日あたりの利用回数上限があります。AI所見を一度も使わなくても、記述対策のその他すべての機能（字数・用語チェック、14観点の計測）は端末内のみで利用できます。</p>
+
+  <h2>通知</h2>
+  <p>ユーザーが受験日を入力した場合にのみ、通知の許可をお尋ねします（アプリ起動時には求めません）。予約されるのは次の2件のみで、いずれも端末内で完結するローカル通知です。プッシュ通知サーバーは使用していません。</p>
+  <p>1. 受験日の14日前（準備状況のお知らせ）<br>
+  2. 2027年3月1日（合格発表日のお知らせ）</p>
+  <p>通知を許可しない場合でも、記述対策を含むアプリのすべての機能をご利用いただけます。通知はiOS/Androidの設定からいつでも無効にできます。</p>
 
   <h2>レビュー誘導</h2>
   <p>Apple 純正の SKStoreReviewController（App Store の標準レビュー機能）のみを使用しています。本アプリが個別にユーザーの評価情報を取得することはありません。</p>
@@ -51,6 +69,6 @@
   <a href="mailto:asonedaywillberefreshing@gmail.com">asonedaywillberefreshing@gmail.com</a></p>
 
   <h2>Privacy Policy (English)</h2>
-  <p>This app does not collect any personal information, location data, or device identifiers. No network connections are made except optional iCloud sync and in-app purchase / restore (via Apple StoreKit and RevenueCat). No third-party advertising, analytics, or tracking SDKs are used. Study progress is stored only in the device's UserDefaults/SharedPreferences and optionally in the user's own iCloud Key-Value Store.</p>
+  <p>This app does not collect any personal information, location data, or device identifiers. No network connections are made except for optional iCloud sync and Apple's standard In-App Purchase flow (managed via RevenueCat for entitlement tracking only). No third-party advertising or analytics SDKs are used. Study progress (answer history, accuracy, weak-question detection, bookmarks, cumulative attempt count) is stored only in the device's UserDefaults/SharedPreferences and the user's own iCloud account, and is removed when the app is uninstalled. The app uses department-scoped storage keys to manage per-discipline progress (e.g., kasen / road / steel) without cross-contamination. Text entered in the written-answer (Mondai III) practice feature — including the answer body, theme names, designated terms and the user's exam date — is stored only in the device's UserDefaults/SharedPreferences. All mechanical measurements (character counting, term extraction, the 14-point gauge) are performed entirely on-device with no network requests and no use of any large language model. The only exception is the optional Pro feature "AI Shoken" (AI commentary): when — and only when — the user explicitly taps "Agree and send" in a per-use consent dialog, the answer text, theme name and on-device measurement results are sent via the developer's relay server (Cloudflare Workers) to Anthropic's Claude API solely to generate reference commentary. The relay server does not store or log the answer text; Anthropic's handling of API inputs is governed by its own privacy policy (inputs are not used for training by default). The commentary result is stored only on the user's device. This feature has a daily usage cap and is never triggered automatically. Local notifications (two at most: 14 days before the user's exam date, and on the result announcement date) are scheduled only after the user enters an exam date and grants permission; no push notification server is involved.</p>
 </body>
 </html>
